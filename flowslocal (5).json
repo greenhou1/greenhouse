@@ -1,0 +1,2901 @@
+[
+    {
+        "id": "2a7a1ef345646eda",
+        "type": "tab",
+        "label": "Configuracion de Riego",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0aaea5a2df832d47",
+        "type": "tab",
+        "label": "Configuracion de Base de Datos",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c43a5e37b43b882f",
+        "type": "tab",
+        "label": "Configuracion Filtros DB",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4e4ee9d1760ac304",
+        "type": "tab",
+        "label": "Acerca de Nosotros",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "660172614be20da4",
+        "type": "mqtt-broker",
+        "name": "onoff",
+        "broker": "10.21.164.155",
+        "port": "1887",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "5433ea89127f8c9d",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Sistema GreenHouse",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "f9b09d40b7c618a1",
+        "type": "ui_group",
+        "name": "Humedad Ambiente",
+        "tab": "4bb3f4f4147e6b55",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4bb3f4f4147e6b55",
+        "type": "ui_tab",
+        "name": "Sistema de Riego",
+        "icon": "mi-shower",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "04b6de877cacd1d3",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0fea8843f1163e9b",
+        "type": "mqtt-broker",
+        "name": "Miniinvernadero",
+        "broker": "192.168.0.101",
+        "port": "1887",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "75638cd705ba9abe",
+        "type": "ui_tab",
+        "name": "Acerca de Nosotros",
+        "icon": "info",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6346e593793aabd1",
+        "type": "ui_group",
+        "name": "Temperatura Ambiente",
+        "tab": "4bb3f4f4147e6b55",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e62b4a3595af7fba",
+        "type": "ui_group",
+        "name": "Funciones",
+        "tab": "4bb3f4f4147e6b55",
+        "order": 5,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1f9a979292290c51",
+        "type": "firebase config",
+        "firebaseurl": "invernadero-e086e-default-rtdb",
+        "loginType": "none"
+    },
+    {
+        "id": "e9297a4c.3c8f38",
+        "type": "ui_group",
+        "name": "Datos de Temperatura",
+        "tab": "23f8592b.d8e0a6",
+        "order": 1,
+        "disp": true,
+        "width": 14,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "23f8592b.d8e0a6",
+        "type": "ui_tab",
+        "name": "Filtro de Datos",
+        "icon": "search",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b8a23aa8.7a2578",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "your_broker_address",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "435ac1ed81954a80",
+        "type": "ui_group",
+        "name": "Humedad del Suelo",
+        "tab": "4bb3f4f4147e6b55",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b4ca37375bf363df",
+        "type": "ui_group",
+        "name": "Slider Punto 5",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ec13dd1a59928aad",
+        "type": "ui_group",
+        "name": "Gauge Punto 6",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6adcb1da595ce614",
+        "type": "ui_group",
+        "name": "Punto 7",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "dcd8f7a96ecdaa5f",
+        "type": "ui_group",
+        "name": "Humedad del Suelo 2",
+        "tab": "4bb3f4f4147e6b55",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "077f5345ba771c7a",
+        "type": "MySQLdatabase",
+        "name": "ejepo",
+        "host": "192.168.0.100",
+        "port": "3306",
+        "db": "sensores",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "db_config",
+        "type": "MySQLdatabase",
+        "name": "mariadb",
+        "host": "192.168.0.100",
+        "port": "3306",
+        "db": "sensores",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "your_dashboard_group",
+        "type": "ui_group",
+        "name": "Tabla Temperatura",
+        "tab": "your_dashboard_tab",
+        "order": 1,
+        "disp": true,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "your_dashboard_tab",
+        "type": "ui_tab",
+        "name": "Datos Almacenados",
+        "icon": "storage",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d88b5195c18c7dc5",
+        "type": "ui_group",
+        "name": "Tabla Humedad",
+        "tab": "your_dashboard_tab",
+        "order": 2,
+        "disp": true,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7076d607dc13546f",
+        "type": "ui_group",
+        "name": "Tabla Humedad Suelo",
+        "tab": "your_dashboard_tab",
+        "order": 3,
+        "disp": true,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "574f5ee3c27e33ca",
+        "type": "ui_group",
+        "name": "Tabla Humedad Suelo 2",
+        "tab": "your_dashboard_tab",
+        "order": 4,
+        "disp": true,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "92c7a96fd8c4849f",
+        "type": "ui_group",
+        "name": "Datos de Humedad",
+        "tab": "23f8592b.d8e0a6",
+        "order": 2,
+        "disp": true,
+        "width": 14,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "424a88f2ef431632",
+        "type": "ui_group",
+        "name": "Datos de Humedad/Suelo",
+        "tab": "23f8592b.d8e0a6",
+        "order": 3,
+        "disp": true,
+        "width": 14,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cf288f1b120db48c",
+        "type": "ui_group",
+        "name": "Datos de Humedad/Suelo2",
+        "tab": "23f8592b.d8e0a6",
+        "order": 4,
+        "disp": true,
+        "width": 14,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cee525e93dddd657",
+        "type": "ui_spacer",
+        "z": "c43a5e37b43b882f",
+        "name": "spacer",
+        "group": "e9297a4c.3c8f38",
+        "order": 2,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "b359a1fcc01b5c94",
+        "type": "ui_spacer",
+        "z": "c43a5e37b43b882f",
+        "name": "spacer",
+        "group": "92c7a96fd8c4849f",
+        "order": 2,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "f6183b9d988625f7",
+        "type": "ui_spacer",
+        "z": "c43a5e37b43b882f",
+        "name": "spacer",
+        "group": "424a88f2ef431632",
+        "order": 2,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "5f4be17bc669ea5c",
+        "type": "ui_spacer",
+        "z": "c43a5e37b43b882f",
+        "name": "spacer",
+        "group": "cf288f1b120db48c",
+        "order": 2,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "bfaf81184eef7da6",
+        "type": "ui_group",
+        "name": "Dashboard Group Temperatura",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8f4d4b3fc2d8e7bb",
+        "type": "firebase config",
+        "firebaseurl": "practica4-431b7-default-rtdb",
+        "loginType": "none"
+    },
+    {
+        "id": "608bb83a72d4d28e",
+        "type": "ui_group",
+        "name": "Practica Unidad 4",
+        "tab": "",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4e37a1d79f99337b",
+        "type": "ui_group",
+        "name": "Acerca de",
+        "tab": "75638cd705ba9abe",
+        "order": 2,
+        "disp": true,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fdd6da3f48ac4571",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 2,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "ce86804014fdc997",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 4,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "89d3eafa2f5fa8b8",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 6,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "c80936fd5cb34fdc",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 7,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "e3049c41dec2cfa3",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 8,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "e004bbc96debb39e",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 9,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "a72539d3cda5f299",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 11,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "ba552c37dab745bc",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 12,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "411093764fa21cd1",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a75e978d504157df",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 15,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "8acaac7419761ba3",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6deab19146eb2c8f",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 17,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "387534357827b6e3",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 18,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6e2f2759a155a57b",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 19,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "87c208474350f40f",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 20,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8dd91ea1186cd220",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 21,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "65026b151b423a5c",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 22,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "dc08b272f669d410",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 23,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "992a938a1fd5cd86",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 24,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6b516cc4c3ea67c0",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 25,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "e4349f8148cf58a2",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 26,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ac49cb2f83a19c9e",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 27,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "6e6180fddebaedb6",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 28,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "bd4ee0fc53b44a67",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 30,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "3c40317128c59744",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 31,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "2094c62091e45edc",
+        "type": "ui_spacer",
+        "z": "4e4ee9d1760ac304",
+        "name": "spacer",
+        "group": "4e37a1d79f99337b",
+        "order": 32,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "e8e94785eab36784",
+        "type": "ui_spacer",
+        "z": "2a7a1ef345646eda",
+        "name": "spacer",
+        "group": "e62b4a3595af7fba",
+        "order": 3,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "a7c410f6e30bb0a2",
+        "type": "mqtt in",
+        "z": "2a7a1ef345646eda",
+        "name": "",
+        "topic": "miniinvernadero/temperatura",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0fea8843f1163e9b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 100,
+        "wires": [
+            [
+                "3dc672cca9ecfbb8",
+                "3cfe117d4c19d966",
+                "c9ef22540a369cef"
+            ]
+        ]
+    },
+    {
+        "id": "cf87a313f7f8d40c",
+        "type": "mqtt in",
+        "z": "2a7a1ef345646eda",
+        "name": "",
+        "topic": "miniinvernadero/humedad_aire",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0fea8843f1163e9b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 200,
+        "wires": [
+            [
+                "5877195a935acd9a",
+                "0bad42670517a697",
+                "b62a4d8a7e98f898"
+            ]
+        ]
+    },
+    {
+        "id": "15922c2b20004cf2",
+        "type": "mqtt in",
+        "z": "2a7a1ef345646eda",
+        "name": "",
+        "topic": "miniinvernadero/humedad_suelo",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0fea8843f1163e9b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 300,
+        "wires": [
+            [
+                "69294027fca99419",
+                "e45a7c64d4abbe41",
+                "37587fa299c81dd5"
+            ]
+        ]
+    },
+    {
+        "id": "69294027fca99419",
+        "type": "ui_gauge",
+        "z": "2a7a1ef345646eda",
+        "name": "Humedad Actual del Suelo",
+        "group": "435ac1ed81954a80",
+        "order": 1,
+        "width": 6,
+        "height": 7,
+        "gtype": "wave",
+        "title": "Porcentaje",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 540,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "5877195a935acd9a",
+        "type": "ui_chart",
+        "z": "2a7a1ef345646eda",
+        "name": "",
+        "group": "f9b09d40b7c618a1",
+        "order": 2,
+        "width": 6,
+        "height": 6,
+        "label": "Datos Históricos",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 560,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e45a7c64d4abbe41",
+        "type": "ui_chart",
+        "z": "2a7a1ef345646eda",
+        "name": "",
+        "group": "435ac1ed81954a80",
+        "order": 2,
+        "width": 6,
+        "height": 6,
+        "label": "Datos Históricos",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 500,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0bad42670517a697",
+        "type": "ui_gauge",
+        "z": "2a7a1ef345646eda",
+        "name": "",
+        "group": "f9b09d40b7c618a1",
+        "order": 1,
+        "width": 6,
+        "height": 7,
+        "gtype": "gage",
+        "title": "Porcentaje",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 570,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "3dc672cca9ecfbb8",
+        "type": "ui_gauge",
+        "z": "2a7a1ef345646eda",
+        "name": "",
+        "group": "6346e593793aabd1",
+        "order": 1,
+        "width": 6,
+        "height": 7,
+        "gtype": "gage",
+        "title": "Porcentaje",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 490,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "3cfe117d4c19d966",
+        "type": "ui_chart",
+        "z": "2a7a1ef345646eda",
+        "name": "",
+        "group": "6346e593793aabd1",
+        "order": 2,
+        "width": 6,
+        "height": 6,
+        "label": "Datos Históricos",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 500,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b510522d1a6fe81c",
+        "type": "ui_switch",
+        "z": "2a7a1ef345646eda",
+        "name": "Switch Bomba",
+        "label": "Encender/Apagar Bombas",
+        "tooltip": "",
+        "group": "e62b4a3595af7fba",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "miniinvernadero/rele",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 220,
+        "y": 840,
+        "wires": [
+            [
+                "27cf24cf65ccdced"
+            ]
+        ]
+    },
+    {
+        "id": "27cf24cf65ccdced",
+        "type": "mqtt out",
+        "z": "2a7a1ef345646eda",
+        "name": "",
+        "topic": "miniinvernadero/rele",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "0fea8843f1163e9b",
+        "x": 520,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "a7b440484e89b4e9",
+        "type": "ui_button",
+        "z": "2a7a1ef345646eda",
+        "name": "Boton Reinicio ESP32",
+        "group": "e62b4a3595af7fba",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Reiniciar Sistema",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "RESTART",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 200,
+        "y": 980,
+        "wires": [
+            [
+                "cb05d756abcd1ecc"
+            ]
+        ]
+    },
+    {
+        "id": "cb05d756abcd1ecc",
+        "type": "mqtt out",
+        "z": "2a7a1ef345646eda",
+        "name": "",
+        "topic": "esp32/control",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "0fea8843f1163e9b",
+        "x": 540,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "425f687fe7bb3f5f",
+        "type": "ui_slider",
+        "z": "2a7a1ef345646eda",
+        "name": "Tiempo de Riego",
+        "label": "Tiempo",
+        "tooltip": "1-60",
+        "group": "e62b4a3595af7fba",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "slider",
+        "topicType": "str",
+        "min": "0",
+        "max": "30",
+        "step": 1,
+        "className": "",
+        "x": 190,
+        "y": 1400,
+        "wires": [
+            [
+                "2f0e6e167e04cd25",
+                "8e81f0b2faf7dde5"
+            ]
+        ]
+    },
+    {
+        "id": "4ddcf65d5dbe4e67",
+        "type": "ui_button",
+        "z": "2a7a1ef345646eda",
+        "name": "Enviar",
+        "group": "e62b4a3595af7fba",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Enviar Tiempo de Riego",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "button",
+        "topicType": "str",
+        "x": 150,
+        "y": 1300,
+        "wires": [
+            [
+                "2f0e6e167e04cd25"
+            ]
+        ]
+    },
+    {
+        "id": "87c3fe2ecc711082",
+        "type": "mqtt out",
+        "z": "2a7a1ef345646eda",
+        "name": "",
+        "topic": "esp32/control/duration",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "0fea8843f1163e9b",
+        "x": 720,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "2f0e6e167e04cd25",
+        "type": "function",
+        "z": "2a7a1ef345646eda",
+        "name": "function 1",
+        "func": "let duration = context.get('duration') || 0;\n\n// Si el mensaje proviene del slider, actualiza el valor de duración\nif (msg.topic === \"slider\") {\n    duration = msg.payload;\n    context.set('duration', duration);\n    return null;  // No envía mensaje aún\n}\n\n// Si el mensaje proviene del botón, envía el valor de duración almacenado\nif (msg.topic === \"button\") {\n    msg.payload = duration;\n    return msg;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 1340,
+        "wires": [
+            [
+                "87c3fe2ecc711082"
+            ]
+        ]
+    },
+    {
+        "id": "e28baa3190ffc737",
+        "type": "mqtt out",
+        "z": "2a7a1ef345646eda",
+        "name": "",
+        "topic": "miniinvernadero/foco",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "0fea8843f1163e9b",
+        "x": 540,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "041b6eb9637d26bf",
+        "type": "ui_switch",
+        "z": "2a7a1ef345646eda",
+        "name": "Switch Foco",
+        "label": "Encender /Apagar Foco",
+        "tooltip": "",
+        "group": "e62b4a3595af7fba",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "miniinvernadero/rele",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 170,
+        "y": 1100,
+        "wires": [
+            [
+                "e28baa3190ffc737"
+            ]
+        ]
+    },
+    {
+        "id": "f8d64e041da5aca4",
+        "type": "firebase modify",
+        "z": "2a7a1ef345646eda",
+        "name": "Coneccion Firebase Temperatura",
+        "firebaseconfig": "1f9a979292290c51",
+        "childpath": "/temperatura",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 1120,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8e81f0b2faf7dde5",
+        "type": "ui_text",
+        "z": "2a7a1ef345646eda",
+        "group": "e62b4a3595af7fba",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Tiempo del Slider",
+        "label": "Tiempo Seleccionado",
+        "format": "{{msg.payload}} s",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 430,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "9642d9362df28a58",
+        "type": "mqtt in",
+        "z": "2a7a1ef345646eda",
+        "name": "",
+        "topic": "miniinvernadero/humedad_suelo2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0fea8843f1163e9b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 580,
+        "wires": [
+            [
+                "76d3371a449cf9a1",
+                "79223f7e0c1f4b1a",
+                "4d25ab19b18c70b5"
+            ]
+        ]
+    },
+    {
+        "id": "76d3371a449cf9a1",
+        "type": "ui_gauge",
+        "z": "2a7a1ef345646eda",
+        "name": "Humedad del suelo 2",
+        "group": "dcd8f7a96ecdaa5f",
+        "order": 1,
+        "width": 6,
+        "height": 7,
+        "gtype": "wave",
+        "title": "Porcentaje",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 560,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "79223f7e0c1f4b1a",
+        "type": "ui_chart",
+        "z": "2a7a1ef345646eda",
+        "name": "Datos sensor 2",
+        "group": "dcd8f7a96ecdaa5f",
+        "order": 2,
+        "width": 6,
+        "height": 6,
+        "label": "Datos Historícos",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 540,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "247abfaa46c53178",
+        "type": "firebase modify",
+        "z": "2a7a1ef345646eda",
+        "name": "Coneccion Firebase Temperatura",
+        "firebaseconfig": "1f9a979292290c51",
+        "childpath": "humedad_aire/",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 1180,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "380ac5bf1dadc385",
+        "type": "firebase modify",
+        "z": "2a7a1ef345646eda",
+        "name": "Coneccion Firebase Temperatura",
+        "firebaseconfig": "1f9a979292290c51",
+        "childpath": "humedad_suelo/",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 1180,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "37587fa299c81dd5",
+        "type": "function",
+        "z": "2a7a1ef345646eda",
+        "name": "function 6",
+        "func": "if (msg.topic === \"miniinvernadero/humedad_suelo\") {\n    var humedad_suelo = parseFloat(msg.payload);\n    if (humedad_suelo < 50) {\n        var now = new Date();\n        var timestamp = now.getFullYear() + \n                        ('0' + (now.getMonth() + 1)).slice(-2) + \n                        ('0' + now.getDate()).slice(-2) + '-' + \n                        ('0' + now.getHours()).slice(-2) + \n                        ('0' + now.getMinutes()).slice(-2) + \n                        ('0' + now.getSeconds()).slice(-2);\n        msg.payload = { [timestamp]: humedad_suelo }; // Clave es la fecha, valor es la humedad del suelo\n        return msg;\n    }\n}\nreturn null; // No hacer nada si no se cumple la condición\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 400,
+        "wires": [
+            [
+                "380ac5bf1dadc385"
+            ]
+        ]
+    },
+    {
+        "id": "e093cb71f4aac6b7",
+        "type": "firebase modify",
+        "z": "2a7a1ef345646eda",
+        "name": "Coneccion Firebase Temperatura",
+        "firebaseconfig": "1f9a979292290c51",
+        "childpath": "humedad_suelo2/",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 1140,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4d25ab19b18c70b5",
+        "type": "function",
+        "z": "2a7a1ef345646eda",
+        "name": "function 7",
+        "func": "if (msg.topic === \"miniinvernadero/humedad_suelo2\") {\n    var humedad_suelo2 = parseFloat(msg.payload);\n    if (humedad_suelo2 < 50) {\n        var now = new Date();\n        var timestamp = now.getFullYear() + \n                        ('0' + (now.getMonth() + 1)).slice(-2) + \n                        ('0' + now.getDate()).slice(-2) + '-' + \n                        ('0' + now.getHours()).slice(-2) + \n                        ('0' + now.getMinutes()).slice(-2) + \n                        ('0' + now.getSeconds()).slice(-2);\n        msg.payload = { [timestamp]: humedad_suelo2 }; // Clave es la fecha, valor es la humedad del suelo 2\n        return msg;\n    }\n}\nreturn null; // No hacer nada si no se cumple la condición\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 640,
+        "wires": [
+            [
+                "e093cb71f4aac6b7"
+            ]
+        ]
+    },
+    {
+        "id": "b62a4d8a7e98f898",
+        "type": "function",
+        "z": "2a7a1ef345646eda",
+        "name": "function 5",
+        "func": "if (msg.topic === \"miniinvernadero/humedad_aire\") {\n    var humedad_aire = parseFloat(msg.payload);\n    if (humedad_aire > 80) {\n        var now = new Date();\n        var timestamp = now.getFullYear() + \n                        ('0' + (now.getMonth() + 1)).slice(-2) + \n                        ('0' + now.getDate()).slice(-2) + '-' + \n                        ('0' + now.getHours()).slice(-2) + \n                        ('0' + now.getMinutes()).slice(-2) + \n                        ('0' + now.getSeconds()).slice(-2);\n        msg.payload = { [timestamp]: humedad_aire }; // Clave es la fecha, valor es la humedad del aire\n        return msg;\n    }\n}\nreturn null; // No hacer nada si no se cumple la condición\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 280,
+        "wires": [
+            [
+                "247abfaa46c53178"
+            ]
+        ]
+    },
+    {
+        "id": "c9ef22540a369cef",
+        "type": "function",
+        "z": "2a7a1ef345646eda",
+        "name": "function 8",
+        "func": "if (msg.topic === \"miniinvernadero/temperatura\") {\n    var temperatura = parseFloat(msg.payload);\n    if (temperatura > 25) {\n        var now = new Date();\n        var timestamp = now.getFullYear() + \n                        ('0' + (now.getMonth() + 1)).slice(-2) + \n                        ('0' + now.getDate()).slice(-2) + '-' + \n                        ('0' + now.getHours()).slice(-2) + \n                        ('0' + now.getMinutes()).slice(-2) + \n                        ('0' + now.getSeconds()).slice(-2);\n        msg.payload = { [timestamp]: temperatura }; // Clave es la fecha, valor es la temperatura\n        return msg;\n    }\n}\nreturn null; // No hacer nada si no se cumple la condición\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 80,
+        "wires": [
+            [
+                "f8d64e041da5aca4"
+            ]
+        ]
+    },
+    {
+        "id": "584e5b8d2c79d2c0",
+        "type": "ui_template",
+        "z": "2a7a1ef345646eda",
+        "group": "e62b4a3595af7fba",
+        "name": "Logo",
+        "order": 7,
+        "width": 6,
+        "height": 6,
+        "format": "<div style=\"text-align:center;\">\n    <img src=\"https://res.cloudinary.com/dufqsaewh/image/upload/v1722393038/GREENHOUSE_1_lwsqjb.png\" alt=\"Descripción de la imagen\" style=\"max-width:100%;\">\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 810,
+        "y": 1240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "67da11352092d95d",
+        "type": "http request",
+        "z": "0aaea5a2df832d47",
+        "name": "Leer THumedad Aire",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://invernadero-e086e-default-rtdb.firebaseio.com/temperatura.json",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 620,
+        "y": 140,
+        "wires": [
+            [
+                "fd073fe26946cc48"
+            ]
+        ]
+    },
+    {
+        "id": "fd073fe26946cc48",
+        "type": "function",
+        "z": "0aaea5a2df832d47",
+        "name": "Procesar Datos",
+        "func": "var data = msg.payload;\nvar tableData = [];\n\nfor (var id in data) {\n    if (data.hasOwnProperty(id)) {\n        for (var timestamp in data[id]) {\n            if (data[id].hasOwnProperty(timestamp)) {\n                var dateTime = timestamp.split('-');\n                var date = dateTime[0];\n                var time = dateTime[1];\n                var formattedDate = date.slice(0, 4) + '-' + date.slice(4, 6) + '-' + date.slice(6, 8);\n                var formattedTime = time.slice(0, 2) + '-' + time.slice(2, 4) + '-' + time.slice(4, 6);\n                tableData.push({ \"ID\": id, \"Fecha\": formattedDate, \"Hora\": formattedTime, \"Valor\": data[id][timestamp] });\n            }\n        }\n    }\n}\n\nmsg.payload = tableData;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 100,
+        "wires": [
+            [
+                "547e1fd1d8f6ba3d"
+            ]
+        ]
+    },
+    {
+        "id": "547e1fd1d8f6ba3d",
+        "type": "ui_table",
+        "z": "0aaea5a2df832d47",
+        "group": "your_dashboard_group",
+        "name": "Tabla de Temperatura",
+        "order": 2,
+        "width": 15,
+        "height": 6,
+        "columns": [
+            {
+                "field": "ID",
+                "title": "ID",
+                "width": "20%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Fecha",
+                "title": "Fecha",
+                "width": "30%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Hora",
+                "title": "Hora",
+                "width": "20%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Valor",
+                "title": "Valor",
+                "width": "30%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1200,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "da017dc0b9785f1c",
+        "type": "http request",
+        "z": "0aaea5a2df832d47",
+        "name": "Leer Temperatura",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://invernadero-e086e-default-rtdb.firebaseio.com/humedad_aire.json",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 590,
+        "y": 260,
+        "wires": [
+            [
+                "c81c310d6af0f78c"
+            ]
+        ]
+    },
+    {
+        "id": "c81c310d6af0f78c",
+        "type": "function",
+        "z": "0aaea5a2df832d47",
+        "name": "Procesar Datos",
+        "func": "var data = msg.payload;\nvar tableData = [];\n\nfor (var id in data) {\n    if (data.hasOwnProperty(id)) {\n        for (var timestamp in data[id]) {\n            if (data[id].hasOwnProperty(timestamp)) {\n                var dateTime = timestamp.split('-');\n                var date = dateTime[0];\n                var time = dateTime[1];\n                var formattedDate = date.slice(0, 4) + '-' + date.slice(4, 6) + '-' + date.slice(6, 8);\n                var formattedTime = time.slice(0, 2) + '-' + time.slice(2, 4) + '-' + time.slice(4, 6);\n                tableData.push({ \"ID\": id, \"Fecha\": formattedDate, \"Hora\": formattedTime, \"Valor\": data[id][timestamp] });\n            }\n        }\n    }\n}\n\nmsg.payload = tableData;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 220,
+        "wires": [
+            [
+                "e2307436ab529cd6"
+            ]
+        ]
+    },
+    {
+        "id": "e2307436ab529cd6",
+        "type": "ui_table",
+        "z": "0aaea5a2df832d47",
+        "group": "d88b5195c18c7dc5",
+        "name": "Tabla de Humedad Aire",
+        "order": 1,
+        "width": 15,
+        "height": 7,
+        "columns": [
+            {
+                "field": "ID",
+                "title": "ID",
+                "width": "20%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Fecha",
+                "title": "Fecha",
+                "width": "30%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Hora",
+                "title": "Hora",
+                "width": "20%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Valor",
+                "title": "Valor",
+                "width": "30%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1190,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "e006e03f0ec26ada",
+        "type": "http request",
+        "z": "0aaea5a2df832d47",
+        "name": "Leer Humedad Suelo",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://invernadero-e086e-default-rtdb.firebaseio.com/humedad_suelo.json",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 620,
+        "y": 360,
+        "wires": [
+            [
+                "cb8db25b8a3130e5"
+            ]
+        ]
+    },
+    {
+        "id": "cb8db25b8a3130e5",
+        "type": "function",
+        "z": "0aaea5a2df832d47",
+        "name": "Procesar Datos",
+        "func": "var data = msg.payload;\nvar tableData = [];\n\nfor (var id in data) {\n    if (data.hasOwnProperty(id)) {\n        for (var timestamp in data[id]) {\n            if (data[id].hasOwnProperty(timestamp)) {\n                var dateTime = timestamp.split('-');\n                var date = dateTime[0];\n                var time = dateTime[1];\n                var formattedDate = date.slice(0, 4) + '-' + date.slice(4, 6) + '-' + date.slice(6, 8);\n                var formattedTime = time.slice(0, 2) + '-' + time.slice(2, 4) + '-' + time.slice(4, 6);\n                tableData.push({ \"ID\": id, \"Fecha\": formattedDate, \"Hora\": formattedTime, \"Valor\": data[id][timestamp] });\n            }\n        }\n    }\n}\n\nmsg.payload = tableData;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 320,
+        "wires": [
+            [
+                "fa66337fd9165652"
+            ]
+        ]
+    },
+    {
+        "id": "fa66337fd9165652",
+        "type": "ui_table",
+        "z": "0aaea5a2df832d47",
+        "group": "7076d607dc13546f",
+        "name": "Tabla de Humedad Suelo",
+        "order": 1,
+        "width": 15,
+        "height": 7,
+        "columns": [
+            {
+                "field": "ID",
+                "title": "ID",
+                "width": "20%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Fecha",
+                "title": "Fecha",
+                "width": "30%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Hora",
+                "title": "Hora",
+                "width": "20%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Valor",
+                "title": "Valor",
+                "width": "30%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1210,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "58ba60c896c9045f",
+        "type": "inject",
+        "z": "0aaea5a2df832d47",
+        "name": "Consultar Datos",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 290,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "453c32ede2ddb61c",
+        "type": "http request",
+        "z": "0aaea5a2df832d47",
+        "name": "Leer Humedad Suelo2",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://invernadero-e086e-default-rtdb.firebaseio.com/humedad_suelo2.json",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 600,
+        "y": 480,
+        "wires": [
+            [
+                "35c119df96b8bb43"
+            ]
+        ]
+    },
+    {
+        "id": "35c119df96b8bb43",
+        "type": "function",
+        "z": "0aaea5a2df832d47",
+        "name": "Procesar Datos",
+        "func": "var data = msg.payload;\nvar tableData = [];\n\nfor (var id in data) {\n    if (data.hasOwnProperty(id)) {\n        for (var timestamp in data[id]) {\n            if (data[id].hasOwnProperty(timestamp)) {\n                var dateTime = timestamp.split('-');\n                var date = dateTime[0];\n                var time = dateTime[1];\n                var formattedDate = date.slice(0, 4) + '-' + date.slice(4, 6) + '-' + date.slice(6, 8);\n                var formattedTime = time.slice(0, 2) + '-' + time.slice(2, 4) + '-' + time.slice(4, 6);\n                tableData.push({ \"ID\": id, \"Fecha\": formattedDate, \"Hora\": formattedTime, \"Valor\": data[id][timestamp] });\n            }\n        }\n    }\n}\n\nmsg.payload = tableData;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 440,
+        "wires": [
+            [
+                "424bccccf86cfade"
+            ]
+        ]
+    },
+    {
+        "id": "424bccccf86cfade",
+        "type": "ui_table",
+        "z": "0aaea5a2df832d47",
+        "group": "574f5ee3c27e33ca",
+        "name": "Tabla de Humedad Suelo_2",
+        "order": 1,
+        "width": 15,
+        "height": 7,
+        "columns": [
+            {
+                "field": "ID",
+                "title": "ID",
+                "width": "20%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Fecha",
+                "title": "Fecha",
+                "width": "30%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Hora",
+                "title": "Hora",
+                "width": "20%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Valor",
+                "title": "Valor",
+                "width": "30%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1200,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "4fed58ed17e472b7",
+        "type": "ui_button",
+        "z": "0aaea5a2df832d47",
+        "name": "Actualizar",
+        "group": "your_dashboard_group",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Actualizar Valores",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 280,
+        "y": 340,
+        "wires": [
+            [
+                "67da11352092d95d",
+                "da017dc0b9785f1c",
+                "e006e03f0ec26ada",
+                "453c32ede2ddb61c"
+            ]
+        ]
+    },
+    {
+        "id": "6effa2a590318746",
+        "type": "ui_date_picker",
+        "z": "c43a5e37b43b882f",
+        "name": "Seleccionar Fecha",
+        "label": "Seleccionar:",
+        "group": "e9297a4c.3c8f38",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "topic": "",
+        "topicType": "str",
+        "className": "",
+        "x": 190,
+        "y": 60,
+        "wires": [
+            [
+                "3aa70537615b62fc"
+            ]
+        ]
+    },
+    {
+        "id": "3aa70537615b62fc",
+        "type": "function",
+        "z": "c43a5e37b43b882f",
+        "name": "Guardar Fecha",
+        "func": "var date = new Date(msg.payload);\nvar yyyy = date.getFullYear();\nvar mm = (date.getMonth() + 1).toString().padStart(2, '0');\nvar dd = date.getDate().toString().padStart(2, '0');\nvar formattedDate = `${yyyy}${mm}${dd}`;\nflow.set('selectedDate', formattedDate);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dbe94ebc153a31be",
+        "type": "ui_button",
+        "z": "c43a5e37b43b882f",
+        "name": "Buscar Datos",
+        "group": "e9297a4c.3c8f38",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Buscar",
+        "tooltip": "",
+        "color": "#ffffff",
+        "bgcolor": "#007bff",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "topicType": "str",
+        "x": 190,
+        "y": 160,
+        "wires": [
+            [
+                "a89eea060a3aadc2"
+            ]
+        ]
+    },
+    {
+        "id": "a89eea060a3aadc2",
+        "type": "http request",
+        "z": "c43a5e37b43b882f",
+        "name": "Leer Datos de Firebase",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://invernadero-e086e-default-rtdb.firebaseio.com/temperatura.json",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 460,
+        "y": 160,
+        "wires": [
+            [
+                "f210cf499d3d6927",
+                "83934b9d831a3633"
+            ]
+        ]
+    },
+    {
+        "id": "f210cf499d3d6927",
+        "type": "debug",
+        "z": "c43a5e37b43b882f",
+        "name": "Datos desde Firebase",
+        "active": true,
+        "x": 730,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "83934b9d831a3633",
+        "type": "function",
+        "z": "c43a5e37b43b882f",
+        "name": "Filtrar por Fecha",
+        "func": "var selectedDate = flow.get('selectedDate');\nvar data = msg.payload;\nvar tableData = [];\n\nif (typeof data === 'object') {\n    for (var key in data) {\n        if (data.hasOwnProperty(key)) {\n            var entries = data[key];\n            for (var entryKey in entries) {\n                if (entries.hasOwnProperty(entryKey)) {\n                    var entry = entries[entryKey];\n                    var date = entryKey.substring(0, 8);\n                    var time = entryKey.substring(9);\n                    if (date === selectedDate) {\n                        var timeFormatted = time.slice(0, 2) + '-' + time.slice(2, 4) + '-' + time.slice(4, 6);\n                        tableData.push({\n                            \"Fecha\": `${selectedDate.slice(0, 4)}-${selectedDate.slice(4, 6)}-${selectedDate.slice(6, 8)}`,\n                            \"Hora\": timeFormatted,\n                            \"Valor\": entry\n                        });\n                    }\n                }\n            }\n        }\n    }\n}\n\nmsg.payload = tableData;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 260,
+        "wires": [
+            [
+                "4467ad1a5189bb4b"
+            ]
+        ]
+    },
+    {
+        "id": "4467ad1a5189bb4b",
+        "type": "ui_table",
+        "z": "c43a5e37b43b882f",
+        "group": "e9297a4c.3c8f38",
+        "name": "Datos Temperatura Filtrados",
+        "order": 4,
+        "width": 14,
+        "height": "4",
+        "columns": [
+            {
+                "field": "Fecha",
+                "title": "Fecha",
+                "width": "30%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Hora",
+                "title": "Hora",
+                "width": "30%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Valor",
+                "title": "Valor",
+                "width": "40%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 900,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "ui_date_picker_humidity",
+        "type": "ui_date_picker",
+        "z": "c43a5e37b43b882f",
+        "name": "Seleccionar Fecha Humedad",
+        "label": "Seleccionar:",
+        "group": "92c7a96fd8c4849f",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "topic": "",
+        "topicType": "str",
+        "className": "",
+        "x": 200,
+        "y": 420,
+        "wires": [
+            [
+                "store_date_humidity"
+            ]
+        ]
+    },
+    {
+        "id": "store_date_humidity",
+        "type": "function",
+        "z": "c43a5e37b43b882f",
+        "name": "Guardar Fecha",
+        "func": "var date = new Date(msg.payload);\nvar yyyy = date.getFullYear();\nvar mm = (date.getMonth() + 1).toString().padStart(2, '0');\nvar dd = date.getDate().toString().padStart(2, '0');\nvar formattedDate = `${yyyy}${mm}${dd}`;\nflow.set('selectedDateHumidity', formattedDate);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ui_button_humidity",
+        "type": "ui_button",
+        "z": "c43a5e37b43b882f",
+        "name": "Buscar Datos Humedad",
+        "group": "92c7a96fd8c4849f",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Buscar",
+        "tooltip": "",
+        "color": "#ffffff",
+        "bgcolor": "#007bff",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "topicType": "str",
+        "x": 180,
+        "y": 520,
+        "wires": [
+            [
+                "http_request_humidity"
+            ]
+        ]
+    },
+    {
+        "id": "http_request_humidity",
+        "type": "http request",
+        "z": "c43a5e37b43b882f",
+        "name": "Leer Humedad Aire de Firebase",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://invernadero-e086e-default-rtdb.firebaseio.com/humedad_aire.json",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 480,
+        "y": 540,
+        "wires": [
+            [
+                "debug_humidity",
+                "filter_humidity"
+            ]
+        ]
+    },
+    {
+        "id": "debug_humidity",
+        "type": "debug",
+        "z": "c43a5e37b43b882f",
+        "name": "Datos Humedad Aire desde Firebase",
+        "active": true,
+        "x": 880,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "filter_humidity",
+        "type": "function",
+        "z": "c43a5e37b43b882f",
+        "name": "Filtrar Humedad Aire por Fecha",
+        "func": "var selectedDate = flow.get('selectedDateHumidity');\nvar data = msg.payload;\nvar tableData = [];\n\nif (typeof data === 'object') {\n    for (var key in data) {\n        if (data.hasOwnProperty(key)) {\n            var entries = data[key];\n            for (var entryKey in entries) {\n                if (entries.hasOwnProperty(entryKey)) {\n                    var entry = entries[entryKey];\n                    var date = entryKey.substring(0, 8);\n                    var time = entryKey.substring(9);\n                    if (date === selectedDate) {\n                        var timeFormatted = time.slice(0, 2) + '-' + time.slice(2, 4) + '-' + time.slice(4, 6);\n                        tableData.push({\n                            \"Fecha\": `${selectedDate.slice(0, 4)}-${selectedDate.slice(4, 6)}-${selectedDate.slice(6, 8)}`,\n                            \"Hora\": timeFormatted,\n                            \"Valor\": entry\n                        });\n                    }\n                }\n            }\n        }\n    }\n}\n\nmsg.payload = tableData;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 540,
+        "wires": [
+            [
+                "ui_table_humidity"
+            ]
+        ]
+    },
+    {
+        "id": "ui_table_humidity",
+        "type": "ui_table",
+        "z": "c43a5e37b43b882f",
+        "group": "92c7a96fd8c4849f",
+        "name": "Datos Filtrados Humedad",
+        "order": 4,
+        "width": 14,
+        "height": "4",
+        "columns": [
+            {
+                "field": "Fecha",
+                "title": "Fecha",
+                "width": "30%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Hora",
+                "title": "Hora",
+                "width": "30%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Valor",
+                "title": "Valor",
+                "width": "40%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1120,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "c1600e9cc1f3b064",
+        "type": "ui_date_picker",
+        "z": "c43a5e37b43b882f",
+        "name": "Seleccionar Fecha Humedad_Suelo",
+        "label": "Seleccionar:",
+        "group": "424a88f2ef431632",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "topic": "",
+        "topicType": "str",
+        "className": "",
+        "x": 210,
+        "y": 700,
+        "wires": [
+            [
+                "4fe495ea1ccd5414"
+            ]
+        ]
+    },
+    {
+        "id": "4fe495ea1ccd5414",
+        "type": "function",
+        "z": "c43a5e37b43b882f",
+        "name": "Guardar Fecha",
+        "func": "var date = new Date(msg.payload);\nvar yyyy = date.getFullYear();\nvar mm = (date.getMonth() + 1).toString().padStart(2, '0');\nvar dd = date.getDate().toString().padStart(2, '0');\nvar formattedDate = `${yyyy}${mm}${dd}`;\nflow.set('selectedDateHumiditysuelo', formattedDate);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73d508a0910c3d6c",
+        "type": "ui_button",
+        "z": "c43a5e37b43b882f",
+        "name": "Buscar Datos Humedad Suelo",
+        "group": "424a88f2ef431632",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Buscar",
+        "tooltip": "",
+        "color": "#ffffff",
+        "bgcolor": "#007bff",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "topicType": "str",
+        "x": 150,
+        "y": 800,
+        "wires": [
+            [
+                "66b06901ccdc61cb"
+            ]
+        ]
+    },
+    {
+        "id": "66b06901ccdc61cb",
+        "type": "http request",
+        "z": "c43a5e37b43b882f",
+        "name": "Leer Humedad Suelo de Firebase",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://invernadero-e086e-default-rtdb.firebaseio.com/humedad_suelo.json",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 460,
+        "y": 820,
+        "wires": [
+            [
+                "abc828d0fda7f6ac",
+                "ba51a78ffb81f8b6"
+            ]
+        ]
+    },
+    {
+        "id": "abc828d0fda7f6ac",
+        "type": "debug",
+        "z": "c43a5e37b43b882f",
+        "name": "Datos Humedad Suelo desde Firebase",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "ba51a78ffb81f8b6",
+        "type": "function",
+        "z": "c43a5e37b43b882f",
+        "name": "Filtrar Humedad Suelo por Fecha",
+        "func": "var selectedDate = flow.get('selectedDateHumiditysuelo');\nvar data = msg.payload;\nvar tableData = [];\n\nif (typeof data === 'object') {\n    for (var key in data) {\n        if (data.hasOwnProperty(key)) {\n            var entries = data[key];\n            for (var entryKey in entries) {\n                if (entries.hasOwnProperty(entryKey)) {\n                    var entry = entries[entryKey];\n                    var date = entryKey.substring(0, 8);\n                    var time = entryKey.substring(9);\n                    if (date === selectedDate) {\n                        var timeFormatted = time.slice(0, 2) + '-' + time.slice(2, 4) + '-' + time.slice(4, 6);\n                        tableData.push({\n                            \"Fecha\": `${selectedDate.slice(0, 4)}-${selectedDate.slice(4, 6)}-${selectedDate.slice(6, 8)}`,\n                            \"Hora\": timeFormatted,\n                            \"Valor\": entry\n                        });\n                    }\n                }\n            }\n        }\n    }\n}\n\nmsg.payload = tableData;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 820,
+        "wires": [
+            [
+                "ea28c5e9b663339b"
+            ]
+        ]
+    },
+    {
+        "id": "ea28c5e9b663339b",
+        "type": "ui_table",
+        "z": "c43a5e37b43b882f",
+        "group": "424a88f2ef431632",
+        "name": "Datos Filtrados Humedad Suelo",
+        "order": 4,
+        "width": 14,
+        "height": "4",
+        "columns": [
+            {
+                "field": "Fecha",
+                "title": "Fecha",
+                "width": "30%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Hora",
+                "title": "Hora",
+                "width": "30%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Valor",
+                "title": "Valor",
+                "width": "40%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1130,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "ece3e7289ec03d00",
+        "type": "ui_date_picker",
+        "z": "c43a5e37b43b882f",
+        "name": "Seleccionar Fecha Humedad_Suelo_2",
+        "label": "Seleccionar:",
+        "group": "cf288f1b120db48c",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "topic": "",
+        "topicType": "str",
+        "className": "",
+        "x": 190,
+        "y": 1020,
+        "wires": [
+            [
+                "b8012ac47bccaf4e"
+            ]
+        ]
+    },
+    {
+        "id": "b8012ac47bccaf4e",
+        "type": "function",
+        "z": "c43a5e37b43b882f",
+        "name": "Guardar Fecha",
+        "func": "var date = new Date(msg.payload);\nvar yyyy = date.getFullYear();\nvar mm = (date.getMonth() + 1).toString().padStart(2, '0');\nvar dd = date.getDate().toString().padStart(2, '0');\nvar formattedDate = `${yyyy}${mm}${dd}`;\nflow.set('selectedDateHumiditysuelo2', formattedDate);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "632d0688a38d3973",
+        "type": "ui_button",
+        "z": "c43a5e37b43b882f",
+        "name": "Buscar Datos Humedad Suelo_2",
+        "group": "cf288f1b120db48c",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Buscar",
+        "tooltip": "",
+        "color": "#ffffff",
+        "bgcolor": "#007bff",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "topicType": "str",
+        "x": 140,
+        "y": 1120,
+        "wires": [
+            [
+                "cade44d0f1a07bd9"
+            ]
+        ]
+    },
+    {
+        "id": "cade44d0f1a07bd9",
+        "type": "http request",
+        "z": "c43a5e37b43b882f",
+        "name": "Leer Humedad Suelo_2 de Firebase",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://invernadero-e086e-default-rtdb.firebaseio.com/humedad_suelo2.json",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 470,
+        "y": 1160,
+        "wires": [
+            [
+                "948c71dd4c7f62c4",
+                "7afe6e61a26698c0"
+            ]
+        ]
+    },
+    {
+        "id": "948c71dd4c7f62c4",
+        "type": "debug",
+        "z": "c43a5e37b43b882f",
+        "name": "Datos Humedad Suelo_2 desde Firebase",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "7afe6e61a26698c0",
+        "type": "function",
+        "z": "c43a5e37b43b882f",
+        "name": "Filtrar Humedad Suelo_2 por Fecha",
+        "func": "var selectedDate = flow.get('selectedDateHumiditysuelo2');\nvar data = msg.payload;\nvar tableData = [];\n\nif (typeof data === 'object') {\n    for (var key in data) {\n        if (data.hasOwnProperty(key)) {\n            var entries = data[key];\n            for (var entryKey in entries) {\n                if (entries.hasOwnProperty(entryKey)) {\n                    var entry = entries[entryKey];\n                    var date = entryKey.substring(0, 8);\n                    var time = entryKey.substring(9);\n                    if (date === selectedDate) {\n                        var timeFormatted = time.slice(0, 2) + '-' + time.slice(2, 4) + '-' + time.slice(4, 6);\n                        tableData.push({\n                            \"Fecha\": `${selectedDate.slice(0, 4)}-${selectedDate.slice(4, 6)}-${selectedDate.slice(6, 8)}`,\n                            \"Hora\": timeFormatted,\n                            \"Valor\": entry\n                        });\n                    }\n                }\n            }\n        }\n    }\n}\n\nmsg.payload = tableData;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 1180,
+        "wires": [
+            [
+                "03c4210bca8e7e59"
+            ]
+        ]
+    },
+    {
+        "id": "03c4210bca8e7e59",
+        "type": "ui_table",
+        "z": "c43a5e37b43b882f",
+        "group": "cf288f1b120db48c",
+        "name": "Datos Filtrados Humedad Suelo_2",
+        "order": 4,
+        "width": 14,
+        "height": "4",
+        "columns": [
+            {
+                "field": "Fecha",
+                "title": "Fecha",
+                "width": "30%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Hora",
+                "title": "Hora",
+                "width": "30%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Valor",
+                "title": "Valor",
+                "width": "40%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1120,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "0af652f4f29eb028",
+        "type": "ui_template",
+        "z": "4e4ee9d1760ac304",
+        "group": "4e37a1d79f99337b",
+        "name": "LogoGreenhouse",
+        "order": 10,
+        "width": 10,
+        "height": 10,
+        "format": "<div style=\"text-align:center;\">\n  <img src=\"https://res.cloudinary.com/dufqsaewh/image/upload/v1722393038/GREENHOUSE_1_lwsqjb.png\" alt=\"Descripción de la imagen\" style=\"max-width:100%;\">\n</div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 550,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6afe9adfe69444de",
+        "type": "ui_template",
+        "z": "4e4ee9d1760ac304",
+        "group": "4e37a1d79f99337b",
+        "name": "TextoCercadeNosotros",
+        "order": 14,
+        "width": 17,
+        "height": 7,
+        "format": "<div style=\"text-align:center;\">\n    <p\n        style=\"font-size:24px; font-family: 'Courier New', Courier, monospace; color: #00FF00; background-color: #000000; padding: 20px; border-radius: 10px;\">\n        <strong>GREENHOUSE</strong> es un innovador proyecto de gestión de riego agrícola por goteo, diseñado para\n        optimizar el uso del\n        agua en mini-invernaderos. Utilizamos tecnología avanzada, incluyendo sensores de humedad del suelo y\n        temperatura\n        ambiental, junto con microcontroladores ESP32 y Raspberry Pi, para monitorear y controlar de manera automatizada\n        el riego.\n        La comunicación y gestión remota del sistema se facilitan a través de servidores MQTT y plataformas en la nube\n        como\n        Firebase y AWS. Nuestro objetivo es maximizar la eficiencia del recurso hídrico y potenciar la productividad\n        agrícola.\n    </p>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 560,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cde573ee8e712602",
+        "type": "ui_template",
+        "z": "4e4ee9d1760ac304",
+        "group": "4e37a1d79f99337b",
+        "name": "LogoTec",
+        "order": 1,
+        "width": 5,
+        "height": 2,
+        "format": "<div style=\"text-align:center;\">\n    <img src=\"https://res.cloudinary.com/dufqsaewh/image/upload/v1721450917/LOGO-RECTANGULAR_SIN-FONDO_mdfhgo.png\" alt=\"Descripción de la imagen\" style=\"max-width:100%;\">\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 340,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bd630030d95ac679",
+        "type": "ui_template",
+        "z": "4e4ee9d1760ac304",
+        "group": "4e37a1d79f99337b",
+        "name": "LogoCuenca",
+        "order": 5,
+        "width": 5,
+        "height": 2,
+        "format": "<div style=\"text-align:center;\">\n    <img src=\"https://res.cloudinary.com/dufqsaewh/image/upload/v1721451090/Marca_UCuenca_2021_Fondo_Blanco-removebg-preview_i2hbwf.png\" alt=\"Descripción de la imagen\" style=\"max-width:100%;\">\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 750,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "29f602dc62f39458",
+        "type": "ui_template",
+        "z": "4e4ee9d1760ac304",
+        "group": "4e37a1d79f99337b",
+        "name": "Nombres",
+        "order": 29,
+        "width": 17,
+        "height": 2,
+        "format": "<div style=\"text-align:center;\">\n    <p>Realizo por los estudiantes de la Carrera de Administración de \n        Infraestructura y Plataformas Tecnológicas.\n        John Collaguazo,\n        Ismael Sevillano,\n        Melany Ponce,\n        Emily Cajamarca\n    </p>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d829cd92d345dde2",
+        "type": "ui_template",
+        "z": "4e4ee9d1760ac304",
+        "group": "4e37a1d79f99337b",
+        "name": "Titulo",
+        "order": 3,
+        "width": 12,
+        "height": 3,
+        "format": "<div style=\"text-align:center;\">\n    <p\n        style=\"font-size:66px; font-family: 'Courier New', Courier, monospace; color: #00FF00; background-color: #000000; padding: 10px; border-radius: 10px; text-transform: uppercase;\">\n        greenhouse\n    </p>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 510,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    }
+]
