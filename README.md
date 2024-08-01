@@ -1,4 +1,4 @@
-                                  ![Logo GreenHouse Negro](https://github.com/user-attachments/assets/63d07c7c-8838-4c60-a02c-31fb523c3f48)
+![Logo GreenHouse Negro](https://github.com/user-attachments/assets/63d07c7c-8838-4c60-a02c-31fb523c3f48)
 
 Descripción del proyecto
 GREENHOUSE se enfoca en la implementación de un sistema de gestión de riego agrícola por goteo, tiene como objetivo optimizar el uso del agua en mini-invernaderos. Mediante el monitoreo y control automatizado del riego, este sistema busca maximizar la eficiencia del recurso hídrico y potenciar la productividad agrícola.
